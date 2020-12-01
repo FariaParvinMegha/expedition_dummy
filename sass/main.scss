@@ -261,8 +261,12 @@ body {
             -ms-border-radius: 5rem;
             -o-border-radius: 5rem;
             margin: 8rem auto 0 auto;
-        }
-
+            transition: all .3s;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+}
 
         
         &:hover,
