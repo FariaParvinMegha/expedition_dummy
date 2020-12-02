@@ -87,8 +87,21 @@ html {
 
 body {
   font-family: 'URW DIN', Arial, Helvetica, sans-serif;
+  font-weight: 300;
   font-style: normal;
   line-height: 1; }
+
+.about,
+.instafeed,
+.charity {
+  padding: 8rem 0;
+  text-align: center; }
+  .about-container,
+  .instafeed-container,
+  .charity-container {
+    max-width: 100rem;
+    padding: 0 8rem;
+    margin: 0 auto; }
 
 .header {
   background-image: url(../img/julian-evans-01.jpg);
@@ -118,28 +131,22 @@ body {
       animation: moveInBottom 1s linear;
       -webkit-animation: moveInBottom 1s linear; }
 
-.about {
-  padding: 8rem 0; }
-  .about-main {
-    max-width: 100rem;
-    padding: 0 8rem;
-    margin: 0 auto; }
-    .about-main-text {
-      font-size: 2.2rem;
-      font-weight: 300;
-      line-height: 1.7;
-      text-align: center;
-      margin-bottom: 3rem; }
-    .about-main-img {
-      display: block;
-      margin: 0 auto;
-      width: 16rem;
-      height: 16rem;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%; }
+.about-text {
+  font-size: 2.2rem;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 3rem; }
+
+.about-img {
+  display: block;
+  margin: 0 auto;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%; }
 
 .expedition {
   background-color: #e1dedd;
@@ -182,16 +189,20 @@ body {
     text-decoration: none;
     color: #252a36;
     font-size: 2rem;
-    font-weight: 300;
     background-color: transparent;
     padding: 1.7rem 3rem;
-    border: 3px solid #252a36;
+    border: 2px solid #252a36;
     border-radius: 5rem;
     -webkit-border-radius: 5rem;
     -moz-border-radius: 5rem;
     -ms-border-radius: 5rem;
     -o-border-radius: 5rem;
-    margin: 8rem auto 0 auto; }
+    margin: 8rem auto 0 auto;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s; }
   .expedition-btn:hover, .expedition-btn:active {
     color: #fff;
     background-color: #252a36; }
@@ -303,3 +314,114 @@ body {
       -moz-transition: 0.3s;
       -o-transition: 0.3s linear;
       -webkit-backface-visibility: hidden; }
+
+.instafeed-header {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.75; }
+
+.instafeed-items {
+  width: 100%;
+  margin: 5rem 0; }
+
+.instafeed-img {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+  margin: 0 2px 4px 2px; }
+
+.instafeed-quote-text {
+  margin: 2rem 0;
+  font-size: 2rem; }
+
+.instafeed-quote-caption {
+  font-size: 2rem; }
+
+.charity {
+  background-color: #e1dedd; }
+  .charity-header {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.75;
+    margin-bottom: 4rem; }
+  .charity-img {
+    display: inline-block;
+    width: 10rem;
+    height: auto;
+    margin: 0 .45rem; }
+
+.footer {
+  background-color: #222222;
+  color: #999999; }
+  .footer-sign-up {
+    text-align: center;
+    padding: 4rem 2rem 0 2rem; }
+    .footer-sign-up-header {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 300; }
+    .footer-sign-up-invite {
+      margin: 2rem 0;
+      font-size: 1.7rem; }
+    .footer-sign-up-box {
+      margin-top: 3rem;
+      position: relative;
+      font-size: 1.6rem;
+      margin: 0 auto; }
+    .footer-sign-up-input {
+      padding: 1.5rem;
+      border: none;
+      background-color: #999999;
+      color: #eeeeee;
+      font-size: 1.6rem; }
+      .footer-sign-up-input:focus {
+        outline: none; }
+    .footer-sign-up-submit {
+      padding: 1.5rem;
+      border: none;
+      font-size: 1.6rem;
+      background-color: #444444;
+      color: #fff;
+      transform: translateX(-10%);
+      -webkit-transform: translateX(-10%);
+      -moz-transform: translateX(-10%);
+      -ms-transform: translateX(-10%);
+      -o-transform: translateX(-10%); }
+      .footer-sign-up-submit:hover {
+        background-color: #fc1050; }
+      .footer-sign-up-submit:focus {
+        outline: none; }
+  .footer-container {
+    padding: 4rem 0 3rem 0; }
+  .footer-social {
+    text-align: center;
+    padding-bottom: 4rem;
+    border-bottom: .5px solid #999999;
+    margin-bottom: 2rem; }
+    .footer-social-icons {
+      font-size: 2.2rem; }
+    .footer-social-link:link, .footer-social-link:visited {
+      margin: 1rem;
+      color: #fff;
+      transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -o-transition: all .3s;
+      -webkit-transition: all .3s; }
+    .footer-social-link:hover, .footer-social-link:active {
+      color: #999999; }
+  .footer-copyright {
+    display: flex;
+    justify-content: space-between; }
+  .footer-right, .footer-left {
+    font-size: 1.5rem; }
+  .footer-right {
+    padding-right: 4rem; }
+  .footer-left {
+    padding-left: 4rem; }
+  .footer-back2top {
+    margin-top: -1rem; }
+    .footer-back2top-icon:link, .footer-back2top-icon:visited {
+      text-decoration: none;
+      font-size: 3rem;
+      color: #999999; }
