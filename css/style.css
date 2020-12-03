@@ -1,4 +1,5 @@
 @import url(../font/stylesheet.css);
+@import url(../sass/nav.css);
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -386,7 +387,12 @@ body {
       -webkit-transform: translateX(-10%);
       -moz-transform: translateX(-10%);
       -ms-transform: translateX(-10%);
-      -o-transform: translateX(-10%); }
+      -o-transform: translateX(-10%);
+      transition: all .3s;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -o-transition: all .3s; }
       .footer-sign-up-submit:hover {
         background-color: #fc1050; }
       .footer-sign-up-submit:focus {
@@ -407,7 +413,8 @@ body {
       -moz-transition: all .3s;
       -ms-transition: all .3s;
       -o-transition: all .3s;
-      -webkit-transition: all .3s; }
+      -webkit-transition: all .3s;
+      text-decoration: none; }
     .footer-social-link:hover, .footer-social-link:active {
       color: #999999; }
   .footer-copyright {
