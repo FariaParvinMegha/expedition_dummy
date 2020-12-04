@@ -83,10 +83,9 @@
     }
 
     &-img {
-        display: inline-block;
-        width: 100px;
+        width: 23%;
         height: auto;
-        margin: 0 2px 4px 2px;
+        margin: 0 .5rem 1rem .5rem;
     }
 
     &-quote {
@@ -243,7 +242,8 @@
     }
 
     &-back2top {
-        margin-top: -1rem;
+        margin-top: -2rem;
+        text-align: center;
 
         &-icon:link,
         &-icon:visited {
@@ -253,3 +253,6 @@
         }
     }
 }
+
+
+@import "responsive.scss";

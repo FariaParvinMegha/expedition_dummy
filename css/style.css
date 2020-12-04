@@ -372,10 +372,9 @@ body {
   margin: 5rem 0; }
 
 .instafeed-img {
-  display: inline-block;
-  width: 100px;
+  width: 23%;
   height: auto;
-  margin: 0 2px 4px 2px; }
+  margin: 0 .5rem 1rem .5rem; }
 
 .instafeed-quote-text {
   margin: 2rem 0;
@@ -473,8 +472,72 @@ body {
   .footer-left {
     padding-left: 4rem; }
   .footer-back2top {
-    margin-top: -1rem; }
+    margin-top: -2rem;
+    text-align: center; }
     .footer-back2top-icon:link, .footer-back2top-icon:visited {
       text-decoration: none;
       font-size: 3rem;
       color: #999999; }
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%; } }
+
+@media only screen and (max-width: 62em) {
+  html {
+    font-size: 50%; }
+  .header-text-main {
+    font-size: 4rem; }
+  .header-text-sub {
+    font-size: 3rem; }
+  .about,
+  .instafeed,
+  .charity {
+    padding: 4rem 0;
+    text-align: center; }
+    .about-container,
+    .instafeed-container,
+    .charity-container {
+      width: auto;
+      padding: 0 4rem;
+      margin: 0 auto; } }
+
+@media only screen and (max-width: 48em) {
+  html {
+    font-size: 50%; }
+  .header-text-main {
+    font-size: 4rem; }
+  .header-text-sub {
+    font-size: 2.5rem; }
+  .about-text {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 3rem; }
+  .footer-copyright {
+    display: flex;
+    flex-direction: column; }
+  .footer-right, .footer-left {
+    text-align: center;
+    padding: 0;
+    margin-top: 1rem; }
+  .footer-back2top {
+    margin-top: 2rem; }
+    .footer-back2top ion-icon {
+      font-size: 4rem; } }
+
+@media only screen and (max-width: 36em) {
+  html {
+    font-size: 50%; }
+  .header-text-main {
+    font-size: 3rem; }
+  .header-text-sub {
+    font-size: 2rem; }
+  .about-text {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 3rem; }
+  .instafeed-img {
+    width: 22%;
+    height: auto; } }
