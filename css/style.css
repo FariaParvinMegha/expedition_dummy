@@ -113,8 +113,6 @@ body {
     height: 9rem;
     background-size: 22.2rem 6.5rem;
     cursor: pointer; }
-  .nav-main {
-    border-top: 1px solid #999999; }
   .nav-logo {
     position: absolute;
     top: 1.5rem;
@@ -128,6 +126,8 @@ body {
       .nav-logo-img img {
         width: 13rem;
         height: auto; }
+  .nav-main {
+    border-top: 1px solid #999999; }
   .nav-content {
     text-align: center; }
   .nav-item {
@@ -486,6 +486,75 @@ body {
 @media only screen and (max-width: 62em) {
   html {
     font-size: 50%; }
+  .nav-main {
+    border: none; }
+  .nav-list {
+    display: none;
+    height: 100vh; }
+  .nav-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%); }
+  .nav-item {
+    display: block; }
+    .nav-item:not(:last-child) {
+      margin-right: 0; }
+  .nav-link:link, .nav-link:visited {
+    display: inline-block;
+    position: absolute;
+    top: 4.5rem;
+    left: 4rem;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s; }
+  .nav-line-1::after, .nav-line-2::after {
+    display: block;
+    content: "";
+    background: #fff;
+    width: 2.5rem;
+    height: 1px;
+    z-index: 20;
+    margin-bottom: .5rem;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s; }
+  .nav-link:hover .nav-line-1::after,
+  .nav-link:hover .nav-line-2::after {
+    background: #fc1050; }
+  .nav-link:focus .nav-line-1::after {
+    margin-bottom: 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    outline: none; }
+  .nav-link:focus .nav-line-2::after {
+    margin-bottom: 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    outline: none; }
+  .nav-link:focus + .nav-list,
+  .nav-link:active + .nav-list {
+    display: block; }
+  .nav .logo {
+    background: url(../img/apple-icon-60x60.png) center center no-repeat; }
+  .nav-logo-text {
+    display: none; }
+  .nav-logo-img {
+    margin-top: 1rem; }
   .header-text-main {
     font-size: 4rem; }
   .header-text-sub {

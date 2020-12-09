@@ -11,10 +11,6 @@
         cursor: pointer;
     }
 
-    &-main {
-        border-top: 1px solid #999999;
-    }
-
     &-logo {
         position: absolute;
         top: 1.5rem;
@@ -34,6 +30,10 @@
                 height: auto;
             }
         }
+    }
+
+    &-main {
+        border-top: 1px solid #999999;
     }
 
     &-content {
@@ -69,6 +69,3 @@
         }
     }
 }
-
-
-

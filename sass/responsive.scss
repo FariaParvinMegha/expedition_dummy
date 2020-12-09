@@ -5,7 +5,6 @@
     html {
         font-size: 50%; //1rem = 8px
     }
-
 }
 
 @media only screen and (max-width: 62em) {
@@ -14,6 +13,108 @@
 
     html {
         font-size: 50%;
+    }
+
+    .nav {
+
+        &-main {
+            border: none;
+        }
+
+        &-list {
+            display: none;
+            height: 100vh;
+        }
+
+        &-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+        }
+
+        &-item {
+            display: block;
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+
+        &-link:link,
+        &-link:visited {
+            display: inline-block;
+            position: absolute;
+            top: 4.5rem;
+            left: 4rem;
+            transition: all .3s;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+        }
+
+        &-line-1::after,
+        &-line-2::after {
+            display: block;
+            content: "";
+            background: #fff;
+            width: 2.5rem;
+            height: 1px;
+            z-index: 20;
+            margin-bottom: .5rem;
+            transition: all .3s;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+        }
+
+        &-link:hover &-line-1::after,
+        &-link:hover &-line-2::after {
+            background: #fc1050;
+        }
+
+        &-link:focus &-line-1::after {
+            margin-bottom: 0;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            outline: none;
+        }
+
+        &-link:focus &-line-2::after {
+            margin-bottom: 0;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            outline: none;
+        }
+
+        &-link:focus+&-list,
+        &-link:active+&-list {
+            display: block;
+        }
+
+        .logo {
+            background: url(../img/apple-icon-60x60.png) center center no-repeat;
+        }
+
+        &-logo-text {
+            display: none;
+        }
+
+        &-logo-img {
+            margin-top: 1rem;
+        }
+
     }
 
     .header-text {
@@ -25,8 +126,6 @@
             font-size: 3rem;
         }
     }
-
-
 
     .about,
     .instafeed,
@@ -40,7 +139,6 @@
             margin: 0 auto;
         }
     }
-
 }
 
 @media only screen and (max-width: 48em) {
@@ -114,7 +212,6 @@
         text-align: center;
         margin-bottom: 3rem;
     }
-
 
     .instafeed-img {
         width: 22%;
