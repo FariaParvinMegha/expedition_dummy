@@ -21,12 +21,37 @@
             border: none;
         }
 
-        &-list {
+        &-checkbox,
+        &-btn {
+            display: block;
+            color: #fff;
+        }
+
+
+        &-checkbox {
             display: none;
-            height: 100vh;
+        }
+
+        &-btn {
+            position: absolute;
+            top: 4rem;
+            left: 4rem;
+            z-index: 20;
         }
 
         &-content {
+            background-color: #252a36;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            z-index: 15;
+
+            opacity: 0;
+            width: 0;
+        }
+
+        &-list {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -38,27 +63,25 @@
         }
 
         &-item {
-            display: block;3q    
+            display: block;
+
             &:not(:last-child) {
                 margin-right: 0;
             }
+
+            &-link:hover {
+                color: #fc1050;
+                border: none;
+            }
         }
 
-        &-link:link,
-        &-link:visited {
-            display: inline-block;
-            position: absolute;
-            top: 4.5rem;
-            left: 4rem;
-            transition: all .3s;
-            -webkit-transition: all .3s;
-            -moz-transition: all .3s;
-            -ms-transition: all .3s;
-            -o-transition: all .3s;
+        &-checkbox:checked~&-content {
+            opacity: 1;
+            width: 100%;
         }
 
-        &-line-1::after,
-        &-line-2::after {
+        &-icon::before,
+        &-icon::after {
             display: block;
             content: "";
             background: #fff;
@@ -73,12 +96,12 @@
             -o-transition: all .3s;
         }
 
-        &-link:hover &-line-1::after,
-        &-link:hover &-line-2::after {
+        &-checkbox:checked+&-btn &-icon:before,
+        &-checkbox:checked+&-btn &-icon:after {
             background: #fc1050;
         }
 
-        &-link:focus &-line-1::after {
+        &-checkbox:checked+&-btn &-icon::before {
             margin-bottom: 0;
             transform: rotate(45deg);
             -webkit-transform: rotate(45deg);
@@ -88,7 +111,7 @@
             outline: none;
         }
 
-        &-link:focus &-line-2::after {
+        &-checkbox:checked+&-btn &-icon::after {
             margin-bottom: 0;
             transform: rotate(-45deg);
             -webkit-transform: rotate(-45deg);
@@ -96,11 +119,6 @@
             -ms-transform: rotate(-45deg);
             -o-transform: rotate(-45deg);
             outline: none;
-        }
-
-        &-link:focus+&-list,
-        &-link:active+&-list {
-            display: block;
         }
 
         .logo {
@@ -194,6 +212,27 @@
     //extra-small: <576px
     html {
         font-size: 50%; //1rem = 8px
+    }
+
+    .nav {
+        &-logo {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+        }
+
+        &-btn {
+            position: absolute;
+            top: 4rem;
+            left: 2rem;
+            z-index: 20;
+        }
+
+        &-logo-img img {
+            width: 10rem;
+            height: auto;
+        }
+
     }
 
     .header-text {

@@ -103,6 +103,168 @@ body {
     padding: 0 8rem;
     margin: 0 auto; }
 
+.header {
+  background-image: url(../img/julian-evans-01.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center; }
+    .header-text-main {
+      font-size: 5.2rem;
+      font-weight: 400;
+      animation: moveInBottom 1s linear;
+      -webkit-animation: moveInBottom 1s linear; }
+    .header-text-sub {
+      font-size: 3.5rem;
+      font-weight: 300;
+      animation: moveInBottom 1s linear;
+      -webkit-animation: moveInBottom 1s linear; }
+
+.about-text {
+  font-size: 2.2rem;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 3rem; }
+
+.about-img {
+  display: block;
+  margin: 0 auto;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%; }
+
+.instafeed-header {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.75; }
+
+.instafeed-items {
+  width: 100%;
+  margin: 5rem 0; }
+
+.instafeed-img {
+  width: 23%;
+  height: auto;
+  margin: 0 .5rem 1rem .5rem; }
+
+.instafeed-quote-text {
+  margin: 2rem 0;
+  font-size: 2rem; }
+
+.instafeed-quote-caption {
+  font-size: 2rem; }
+
+.charity {
+  background-color: #e1dedd; }
+  .charity-header {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.75;
+    margin-bottom: 4rem; }
+  .charity-img {
+    display: inline-block;
+    width: 10rem;
+    height: auto;
+    margin: 0 .45rem; }
+
+.footer {
+  background-color: #222222;
+  color: #999999; }
+  .footer-sign-up {
+    text-align: center;
+    padding: 4rem 2rem 0 2rem; }
+    .footer-sign-up-header {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 300; }
+    .footer-sign-up-invite {
+      margin: 2rem 0;
+      font-size: 1.7rem; }
+    .footer-sign-up-box {
+      margin-top: 3rem;
+      position: relative;
+      font-size: 1.6rem;
+      margin: 0 auto; }
+    .footer-sign-up-input {
+      padding: 1.5rem;
+      border: none;
+      background-color: #999999;
+      color: #eeeeee;
+      font-size: 1.6rem; }
+      .footer-sign-up-input:focus {
+        outline: none; }
+    .footer-sign-up-submit {
+      padding: 1.5rem;
+      border: none;
+      font-size: 1.6rem;
+      background-color: #444444;
+      color: #fff;
+      transform: translateX(-10%);
+      -webkit-transform: translateX(-10%);
+      -moz-transform: translateX(-10%);
+      -ms-transform: translateX(-10%);
+      -o-transform: translateX(-10%);
+      transition: all .3s;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -o-transition: all .3s; }
+      .footer-sign-up-submit:hover {
+        background-color: #fc1050; }
+      .footer-sign-up-submit:focus {
+        outline: none; }
+  .footer-container {
+    padding: 4rem 0 3rem 0; }
+  .footer-social {
+    text-align: center;
+    padding-bottom: 4rem;
+    border-bottom: .5px solid #999999;
+    margin-bottom: 2rem; }
+    .footer-social-icons {
+      font-size: 2.2rem; }
+    .footer-social-link:link, .footer-social-link:visited {
+      margin: 1rem;
+      color: #fff;
+      transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -o-transition: all .3s;
+      -webkit-transition: all .3s;
+      text-decoration: none; }
+    .footer-social-link:hover, .footer-social-link:active {
+      color: #999999; }
+  .footer-copyright {
+    display: flex;
+    justify-content: space-between; }
+  .footer-right, .footer-left {
+    font-size: 1.5rem; }
+  .footer-right {
+    padding-right: 4rem; }
+  .footer-left {
+    padding-left: 4rem; }
+  .footer-back2top {
+    margin-top: -2rem;
+    text-align: center; }
+    .footer-back2top-icon:link, .footer-back2top-icon:visited {
+      text-decoration: none;
+      font-size: 3rem;
+      color: #999999; }
+
 .nav {
   background-color: #252a36;
   position: relative; }
@@ -128,7 +290,9 @@ body {
         height: auto; }
   .nav-main {
     border-top: 1px solid #999999; }
-  .nav-content {
+  .nav-checkbox, .nav-btn {
+    display: none; }
+  .nav-list {
     text-align: center; }
   .nav-item {
     display: inline-block;
@@ -317,168 +481,6 @@ body {
       -o-transition: 0.3s linear;
       -webkit-backface-visibility: hidden; }
 
-.header {
-  background-image: url(../img/julian-evans-01.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  position: relative; }
-  .header-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center; }
-    .header-text-main {
-      font-size: 5.2rem;
-      font-weight: 400;
-      animation: moveInBottom 1s linear;
-      -webkit-animation: moveInBottom 1s linear; }
-    .header-text-sub {
-      font-size: 3.5rem;
-      font-weight: 300;
-      animation: moveInBottom 1s linear;
-      -webkit-animation: moveInBottom 1s linear; }
-
-.about-text {
-  font-size: 2.2rem;
-  line-height: 1.7;
-  text-align: center;
-  margin-bottom: 3rem; }
-
-.about-img {
-  display: block;
-  margin: 0 auto;
-  width: 16rem;
-  height: 16rem;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%; }
-
-.instafeed-header {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.75; }
-
-.instafeed-items {
-  width: 100%;
-  margin: 5rem 0; }
-
-.instafeed-img {
-  width: 23%;
-  height: auto;
-  margin: 0 .5rem 1rem .5rem; }
-
-.instafeed-quote-text {
-  margin: 2rem 0;
-  font-size: 2rem; }
-
-.instafeed-quote-caption {
-  font-size: 2rem; }
-
-.charity {
-  background-color: #e1dedd; }
-  .charity-header {
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 1.75;
-    margin-bottom: 4rem; }
-  .charity-img {
-    display: inline-block;
-    width: 10rem;
-    height: auto;
-    margin: 0 .45rem; }
-
-.footer {
-  background-color: #222222;
-  color: #999999; }
-  .footer-sign-up {
-    text-align: center;
-    padding: 4rem 2rem 0 2rem; }
-    .footer-sign-up-header {
-      color: #fff;
-      font-size: 2rem;
-      font-weight: 300; }
-    .footer-sign-up-invite {
-      margin: 2rem 0;
-      font-size: 1.7rem; }
-    .footer-sign-up-box {
-      margin-top: 3rem;
-      position: relative;
-      font-size: 1.6rem;
-      margin: 0 auto; }
-    .footer-sign-up-input {
-      padding: 1.5rem;
-      border: none;
-      background-color: #999999;
-      color: #eeeeee;
-      font-size: 1.6rem; }
-      .footer-sign-up-input:focus {
-        outline: none; }
-    .footer-sign-up-submit {
-      padding: 1.5rem;
-      border: none;
-      font-size: 1.6rem;
-      background-color: #444444;
-      color: #fff;
-      transform: translateX(-10%);
-      -webkit-transform: translateX(-10%);
-      -moz-transform: translateX(-10%);
-      -ms-transform: translateX(-10%);
-      -o-transform: translateX(-10%);
-      transition: all .3s;
-      -webkit-transition: all .3s;
-      -moz-transition: all .3s;
-      -ms-transition: all .3s;
-      -o-transition: all .3s; }
-      .footer-sign-up-submit:hover {
-        background-color: #fc1050; }
-      .footer-sign-up-submit:focus {
-        outline: none; }
-  .footer-container {
-    padding: 4rem 0 3rem 0; }
-  .footer-social {
-    text-align: center;
-    padding-bottom: 4rem;
-    border-bottom: .5px solid #999999;
-    margin-bottom: 2rem; }
-    .footer-social-icons {
-      font-size: 2.2rem; }
-    .footer-social-link:link, .footer-social-link:visited {
-      margin: 1rem;
-      color: #fff;
-      transition: all .3s;
-      -moz-transition: all .3s;
-      -ms-transition: all .3s;
-      -o-transition: all .3s;
-      -webkit-transition: all .3s;
-      text-decoration: none; }
-    .footer-social-link:hover, .footer-social-link:active {
-      color: #999999; }
-  .footer-copyright {
-    display: flex;
-    justify-content: space-between; }
-  .footer-right, .footer-left {
-    font-size: 1.5rem; }
-  .footer-right {
-    padding-right: 4rem; }
-  .footer-left {
-    padding-left: 4rem; }
-  .footer-back2top {
-    margin-top: -2rem;
-    text-align: center; }
-    .footer-back2top-icon:link, .footer-back2top-icon:visited {
-      text-decoration: none;
-      font-size: 3rem;
-      color: #999999; }
-
 @media only screen and (max-width: 75em) {
   html {
     font-size: 50%; } }
@@ -488,10 +490,26 @@ body {
     font-size: 50%; }
   .nav-main {
     border: none; }
-  .nav-list {
-    display: none;
-    height: 100vh; }
+  .nav-checkbox, .nav-btn {
+    display: block;
+    color: #fff; }
+  .nav-checkbox {
+    display: none; }
+  .nav-btn {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    z-index: 20; }
   .nav-content {
+    background-color: #252a36;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 15;
+    opacity: 0;
+    width: 0; }
+  .nav-list {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -504,17 +522,13 @@ body {
     display: block; }
     .nav-item:not(:last-child) {
       margin-right: 0; }
-  .nav-link:link, .nav-link:visited {
-    display: inline-block;
-    position: absolute;
-    top: 4.5rem;
-    left: 4rem;
-    transition: all .3s;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s; }
-  .nav-line-1::after, .nav-line-2::after {
+    .nav-item-link:hover {
+      color: #fc1050;
+      border: none; }
+  .nav-checkbox:checked ~ .nav-content {
+    opacity: 1;
+    width: 100%; }
+  .nav-icon::before, .nav-icon::after {
     display: block;
     content: "";
     background: #fff;
@@ -527,10 +541,10 @@ body {
     -moz-transition: all .3s;
     -ms-transition: all .3s;
     -o-transition: all .3s; }
-  .nav-link:hover .nav-line-1::after,
-  .nav-link:hover .nav-line-2::after {
+  .nav-checkbox:checked + .nav-btn .nav-icon:before,
+  .nav-checkbox:checked + .nav-btn .nav-icon:after {
     background: #fc1050; }
-  .nav-link:focus .nav-line-1::after {
+  .nav-checkbox:checked + .nav-btn .nav-icon::before {
     margin-bottom: 0;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -538,7 +552,7 @@ body {
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     outline: none; }
-  .nav-link:focus .nav-line-2::after {
+  .nav-checkbox:checked + .nav-btn .nav-icon::after {
     margin-bottom: 0;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -546,9 +560,6 @@ body {
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     outline: none; }
-  .nav-link:focus + .nav-list,
-  .nav-link:active + .nav-list {
-    display: block; }
   .nav .logo {
     background: url(../img/apple-icon-60x60.png) center center no-repeat; }
   .nav-logo-text {
@@ -598,6 +609,18 @@ body {
 @media only screen and (max-width: 36em) {
   html {
     font-size: 50%; }
+  .nav-logo {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem; }
+  .nav-btn {
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+    z-index: 20; }
+  .nav-logo-img img {
+    width: 10rem;
+    height: auto; }
   .header-text-main {
     font-size: 3rem; }
   .header-text-sub {
